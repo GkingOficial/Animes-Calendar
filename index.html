@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animes Calendar</title>
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <i class="icon-menu"></i>
+        <div id="div-title">
+          <h1>Animes Calendar</h1>
+        </div>
+
+        <div id="div-search">
+          <input
+            type="text"
+            id="txt-search"
+            placeholder="Digite o nome do anime"
+          />
+          <i class="icon-search"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="title">
+        <h1>Calendário</h1>
+      </div>
+
+      <div class="content">
+        <div class="animes">
+          <div class="days swiper">
+            <div class="swiper-wrapper">
+              <div class="day swiper-slide">Domingo</div>
+              <div class="day swiper-slide">Segunda-feira</div>
+              <div class="day swiper-slide">Terça-feira</div>
+              <div class="day swiper-slide">Quarta-feira</div>
+              <div class="day swiper-slide">Quinta-feira</div>
+              <div class="day swiper-slide">Sexta-feira</div>
+              <div class="day swiper-slide">Sábado</div>
+            </div>
+          </div>
+          <ul>
+            <li class="anime">
+              <div class="shape"><p>Shingeki no Kyojin</p></div>
+              <img
+                src="assets/images/shingeki-no-kyojin-4-part-2-todos-os-episodios.jpg"
+                alt="Capa de Shingeki no Kyojin"
+                class="cover"
+              />
+            </li>
+            <li class="anime">
+              <img
+                src="assets/images/KIMETSU-NO-YAIBA-09.jpg"
+                alt="Capa de Kimetsu no Yaiba"
+                class="cover"
+              />
+              <div class="shape"><p>Kimetsu no Yaiba</p></div>
+            </li>
+            <li class="anime">
+              <div class="shape"><p>Baraou no Souretsu</p></div>
+              <img
+                src="assets/images/1-ku.jpg"
+                alt="Capa de Baraou no Souretsu"
+                class="cover"
+              />
+            </li>
+            <li class="anime">
+              <div class="shape"><p>Tsuki to Laika to Nosferatu</p></div>
+              <img
+                src="assets/images/visual-1-2-scaled-1.jpg"
+                alt="Capa de Tsuki to Laika to Nosferatu"
+                class="cover"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <h1>Animes Calendar</h1>
+      <div class="social">
+        <i class="icon-instagram"></i>
+        <i class="icon-facebook"></i>
+      </div>
+      <p>Animes Calendar 2022 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
