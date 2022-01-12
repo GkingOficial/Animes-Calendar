@@ -1,12 +1,3 @@
-/*let animes = localStorage.getItem('Animes')
-localStorage.clear()
-if (animes) {
-  console.log(animes)
-} else {
-  alert(null)
-}
-
-/*
 function createList(list) {
   list.forEach(anime => {
     let item = document.createElement('li')
@@ -45,13 +36,12 @@ async function getJSON() {
   console.log(animes)
 
   listAnimes.push({
-    name: 'Tsuki to Laika no Nosferatu',
+    name: 'Tsuki to Laika to Nosferatu',
     day: 'monday',
-    img: 'https://i.stack.imgur.com/mcWk8.png'
+    img: 'https://www.intoxianime.com/wp-content/uploads/2021/07/visual-1-2-scaled-1.jpg'
   })
 
   return listAnimes
 }
 
 getJSON().then(createList)
-*/
