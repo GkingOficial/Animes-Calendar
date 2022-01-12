@@ -7,7 +7,7 @@ let query = '&q=shingeki-no-kyojin'
 let t =
   'https://customsearch.googleapis.com/customsearch/v1?key=AIzaSyBHbF6ychO-WzUYjuc0oU-jAC7zIov-fcM&cx=8199ad216d7844fa0&num=1&imgSize=huge&searchType=image&q=shingeki-no-kyojin&callback=hnldr'
 
-console.log(document.querySelector('body script.image-search'))
+console.log(document.querySelector('.image-search'))
 
 function hndlr(response) {
   console.log(response)
