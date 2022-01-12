@@ -1,3 +1,12 @@
+/*let animes = localStorage.getItem('Animes')
+localStorage.clear()
+if (animes) {
+  console.log(animes)
+} else {
+  alert(null)
+}
+
+/*
 function createList(list) {
   list.forEach(anime => {
     let item = document.createElement('li')
@@ -45,3 +54,4 @@ async function getJSON() {
 }
 
 getJSON().then(createList)
+*/
