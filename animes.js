@@ -25,10 +25,3 @@ if (animes) {
     document.querySelector('.animesList').appendChild(item)
   })
 }
-
-/*
-  listAnimes.push({
-    name: 'Tsuki to Laika to Nosferatu',
-    day: 'monday',
-    img: 'https://www.intoxianime.com/wp-content/uploads/2021/07/visual-1-2-scaled-1.jpg'
-  })*/
