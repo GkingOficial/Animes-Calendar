@@ -83,10 +83,7 @@ function save() {
 
 function clearAll() {
   listToSend = []
-  save()
-  ul.childNodes.forEach(son => {
-    ul.removeChild(son)
-  })
+  ul.innerHTML = ''
 }
 
 update()
