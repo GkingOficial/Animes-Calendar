@@ -3,13 +3,15 @@
     {
       "name": "Shingeki no kyojin",
       "day": "sunday",
-      "img": "https://cdn.statically.io/img/animesonlinegames.com/f=auto/wp-content/uploads/2021/12/shingeki-no-kyojin-4-part-2-todos-os-episodios.jpg"
+      "img": "https://cdn.statically.io/img/animesonlinegames.com/f=auto/wp-content/uploads/2021/12/shingeki-no-kyojin-4-part-2-todos-os-episodios.jpg",
+      "state": "new"
     },
 
     {
       "name": "Kimetsu no yaiba",
       "day": "sunday",
-      "img": "https://www.animeunited.com.br/oomtumtu/2021/09/kimetsu.jpg"
+      "img": "https://www.animeunited.com.br/oomtumtu/2021/09/kimetsu.jpg",
+      "state": "new"
     }
   ]
 }

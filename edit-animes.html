@@ -28,11 +28,17 @@
           <option value="saturday">Sábado</option>
         </select>
 
+        <input type="text" id="input-image" placeholder="Imagem do anime" />
+
         <input type="button" value="Adicionar" onclick="add()" />
       </header>
 
       <main>
         <ul class="list"></ul>
+        <div class="buttons">
+          <input type="button" value="Salvar" onclick="save()" />
+          <input type="button" value="Limpar lista" onclick="clearAll()" />
+        </div>
       </main>
     </div>
 
