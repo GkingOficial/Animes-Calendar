@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert Animes</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="edit-animes.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input type="text" id="input-text" placeholder="Nome do anime" />
+
+        <select id="states" onchange="showDays()">
+          <option value="new">Em andamento</option>
+          <option value="finished">Finalizado</option>
+        </select>
+
+        <select id="days">
+          <option value="sunday">Domingo</option>
+          <option value="monday">Segunda</option>
+          <option value="tuesday">Terça</option>
+          <option value="wednesday">Quarta</option>
+          <option value="thirsday">Quinta</option>
+          <option value="friday">Sexta</option>
+          <option value="saturday">Sábado</option>
+        </select>
+
+        <input type="button" value="Adicionar" onclick="add()" />
+      </header>
+
+      <main>
+        <ul class="list"></ul>
+      </main>
+    </div>
+
+    <script src="edit-animes.js"></script>
+  </body>
+</html>

@@ -33,7 +33,6 @@ async function getJSON() {
 
   let animes = localStorage.getItem('Animes')
   let listAnimes = JSON.parse(animes)
-  console.log(animes)
 
   listAnimes.push({
     name: 'Tsuki to Laika to Nosferatu',
