@@ -73,3 +73,21 @@ select {
 #test {
   width: 100%;
 }
+
+.images {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  border: 1px solid;
+  justify-content: space-around;
+}
+
+.images .image {
+  width: 12.9rem;
+  height: 17.5rem;
+  display: flex;
+}
+
+.images .image img {
+  object-fit: cover;
+}

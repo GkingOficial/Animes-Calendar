@@ -10,8 +10,7 @@ let ul = document.querySelector('.list')
 let listToSend = []
 
 //get image
-let url =
-  'https://customsearch.googleapis.com/customsearch/v1?key=AIzaSyBHbF6ychO-WzUYjuc0oU-jAC7zIov-fcM&cx=8199ad216d7844fa0&num=1&imgSize=large&searchType=image'
+let url = `https://customsearch.googleapis.com/customsearch/v1?key=AIzaSyBHbF6ychO-WzUYjuc0oU-jAC7zIov-fcM&cx=8199ad216d7844fa0&num=10&imgSize=huge&searchType=image&filter=1&hq=anime&fileType:jpg`
 var xhttp = new XMLHttpRequest()
 
 async function getList(array) {
@@ -44,6 +43,21 @@ function searchImage(query) {
   xhttp.open('GET', url + '&q=' + query, false)
   xhttp.send()
 
+  let divImage = document.querySelector('.images')
+
+  divImage.innerHTML = ''
+
+  JSON.parse(xhttp.response).items.forEach(item => {
+    let image = document.createElement('div')
+    image.classList.add('image')
+
+    let i = document.createElement('img')
+    i.src = item.link
+
+    image.appendChild(i)
+    divImage.appendChild(image)
+  })
+
   return JSON.parse(xhttp.response).items[0].link
 }
 
@@ -62,11 +76,13 @@ function add() {
   if (animeInput.value == '') {
     alert('Digite o nome do anime!')
   } else {
+    let string = animeInput.value.toLowerCase()
+    let firstUpperCase = string[0].toUpperCase() + string.slice(1)
     let list = [
       {
-        name: animeInput.value,
+        name: firstUpperCase,
         day: day.value,
-        img: searchImage(animeInput.value),
+        img: searchImage(firstUpperCase),
         state: state.value == 'new' ? state.value : 'finished'
       }
     ]
