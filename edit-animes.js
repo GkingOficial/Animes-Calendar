@@ -11,7 +11,7 @@ let listToSend = []
 
 //get image
 let url =
-  'https://customsearch.googleapis.com/customsearch/v1?key=AIzaSyBHbF6ychO-WzUYjuc0oU-jAC7zIov-fcM&cx=8199ad216d7844fa0&num=1&imgSize=huge&searchType=image'
+  'https://customsearch.googleapis.com/customsearch/v1?key=AIzaSyBHbF6ychO-WzUYjuc0oU-jAC7zIov-fcM&cx=8199ad216d7844fa0&num=1&imgSize=large&searchType=image'
 var xhttp = new XMLHttpRequest()
 
 async function getList(array) {
