@@ -73,7 +73,6 @@ function add() {
 
     getList(JSON.stringify(list))
     animeInput.value = ''
-    imageInput.value = ''
   }
 }
 
