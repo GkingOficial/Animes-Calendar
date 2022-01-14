@@ -4,9 +4,15 @@ let imageInput = document.getElementById('input-image')
 let state = document.getElementById('states')
 let day = document.getElementById('days')
 
+//get list
 let ul = document.querySelector('.list')
 
 let listToSend = []
+
+//get image
+let url =
+  'https://customsearch.googleapis.com/customsearch/v1?key=AIzaSyBHbF6ychO-WzUYjuc0oU-jAC7zIov-fcM&cx=8199ad216d7844fa0&num=1&imgSize=huge&searchType=image'
+var xhttp = new XMLHttpRequest()
 
 async function getList(array) {
   let animesListJson = JSON.parse(array)
@@ -34,6 +40,13 @@ async function getList(array) {
   })
 }
 
+function searchImage(query) {
+  xhttp.open('GET', url + '&q=' + query, false)
+  xhttp.send()
+
+  return JSON.parse(xhttp.response).items[0].link
+}
+
 function update() {
   let animesLocalStorage = localStorage.getItem('Animes')
   if (animesLocalStorage) {
@@ -53,7 +66,7 @@ function add() {
       {
         name: animeInput.value,
         day: day.value,
-        img: imageInput.value,
+        img: searchImage(animeInput.value),
         state: state.value == 'new' ? state.value : 'finished'
       }
     ]

@@ -69,3 +69,7 @@ select {
   width: 2rem;
   font-size: 1.4rem;
 }
+
+#test {
+  width: 100%;
+}
